@@ -5,6 +5,7 @@ import { apiImage } from '../constants/apiConstant';
 
 
 const AlbumCard = ({data}) => {
+  console.log(data)
    //afficher les infos des albums 
   const imgPath = `${apiImage}/${data.imagePath}`;
 
@@ -32,11 +33,18 @@ const AlbumCard = ({data}) => {
 </div>
 <Link to='/detail' state={{params : data}}>
 <div className='mt-4 flex flex-col'>
+  <p className='text-white text-x1 truncate font-bold'>
+    {data.title}
+  </p>
+
+  <p className='text-white text-sm truncate '>
+    {data.artist.name}
+  </p>
 
 </div>
 
 </Link>
-        <div>AlbumCard</div>
+       
 
     </div>
   )

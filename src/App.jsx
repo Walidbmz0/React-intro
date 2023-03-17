@@ -19,7 +19,7 @@ function App() {
           
         </Topbar>
 
-        <div className='px-6 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar'>
+        <div className='h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar'>
           <div className='flex-1 h-fit pb-40 text-white'>
             <Outlet />
 

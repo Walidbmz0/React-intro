@@ -32,7 +32,7 @@ const Home = () => {
         <h2 className='font-bold text-3x1 text-white text-left mt-4 mb-10'>
             Tous les albums
         </h2>
-        <div className='flex flex-wrap justify-center gap-8'>
+        <div className='flex flex-wrap md:justify-start gap-8'>
             {/* on va mapper sur dataAlbum dès que les infos sont chargées */}
             {dataAlbum && dataAlbum.map((data, index) => {
 

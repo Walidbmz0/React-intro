@@ -1,6 +1,7 @@
 
 import React from 'react'
 import HeaderDetail from './HeaderDetail'
+import ListAlbumSong from './ListAlbumSong'
 import ToolBarDetail from './ToolBarDetail'
 
 
@@ -10,6 +11,7 @@ const DetailAlbum = ({dataAlbum}) => {
     <>
    <HeaderDetail dataAlbum={dataAlbum}/>
    <ToolBarDetail dataAlbum={dataAlbum}/>
+   <ListAlbumSong dataAlbum={dataAlbum}/>
    
 
    </>

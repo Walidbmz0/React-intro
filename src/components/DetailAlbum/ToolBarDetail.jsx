@@ -2,6 +2,8 @@ import React from 'react'
 import {BsFillPlayCircleFill} from 'react-icons/bs'
 import {AiFillHeart, AiFillInfoCircle, AiOutlineHeart, AiOutlineInfoCircle} from 'react-icons/ai'
 import { Collapse } from 'react-collapse'
+import InfoAlbum from './InfoAlbum'
+
 
 const ToolBarDetail = ({dataAlbum}) => {
 
@@ -52,8 +54,9 @@ const [isInList, setIsInList] = React.useState(false) //Todo récupérer la vrai
         {/* on va récuperer les infos du Collapse */}
         <div>
             <Collapse isOpened={!isCollapse}>
-                <h2 className='text-white'>Hello la collapse</h2>
-                {/* Todo importer composant infoAlbum */}
+            
+                {/* On importe le composant infoAlbum */}
+                <InfoAlbum dataAlbum={dataAlbum}/>
                 </Collapse>
                 
 

@@ -29,3 +29,8 @@
     background-color: transparent;
     border-radius: 5px;
 }
+
+/* Collapse transition */ 
+.ReactCollapse--collapse {
+    transition: height 1500ms;
+}

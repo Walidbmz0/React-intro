@@ -7,14 +7,12 @@ const Loader = () => {
         <Audio
         height="100"
         width="100"
-        color='rgba(30,215, 96,2'
-        aria-label="audio-Loading"    
+        color='rgba(30, 215, 96, 1)'
+        ariaLabel='audio-loading'
         wrapperStyle={{}}
         wrapperClass="wrapper-class"
         visible={true}
         />
-
-
     </div>
   )
 }

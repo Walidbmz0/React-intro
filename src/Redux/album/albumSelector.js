@@ -1,13 +1,12 @@
 import { createSelector } from "@reduxjs/toolkit";
-//On récupèrre les données du slice qu'on stock dans une constante
 
+//on récupère les données du slice qu'on stock dans des constantes
 const selectAlbums = state => state.albums.albums;
-
 const selectLoading = state => state.albums.loading;
 
-//on crée le selector 
+//on crée le selector
 export const selectAlbumsData = createSelector(
     [selectAlbums, selectLoading],
-    // On effectue une déstructuration d'objet
+    //on effectue une destructuration d'objet
     (albums, loading) => ({albums, loading})
 )

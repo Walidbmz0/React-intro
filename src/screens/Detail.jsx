@@ -1,17 +1,16 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom'
 import DetailAlbum from '../components/DetailAlbum';
 
 const Detail = () => {
-
-  // On appelle le hook de react-rooter-dom
-
+  //on appelle le hook de react-router-dom
   const location = useLocation();
-  // On récupère les DATAS depuis la route
-  const data = location.state.params;
-  return (
+  //on récupère les datas depuis la route
+  //les ? servent à vérifier si la valeur existe
+  const data = location?.state?.params;
 
-    <DetailAlbum dataAlbum={data}/>//On passe les datas à index.jsx de DetailAlbum
+  return (
+    <DetailAlbum dataAlbum={data}/>//on passe les datas à index.jsx de DetailAlbum
   )
 }
 

@@ -6,7 +6,6 @@ const Topbar = () => {
             <p className='text-base text-white p-4'>
                 ICI LA TOPBAR
             </p>
-
         </div>
     )
 }

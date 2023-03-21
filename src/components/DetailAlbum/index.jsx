@@ -1,20 +1,16 @@
-
 import React from 'react'
 import HeaderDetail from './HeaderDetail'
 import ListAlbumSong from './ListAlbumSong'
-import ToolBarDetail from './ToolBarDetail'
-
+import ToolsBarDetail from './ToolsBarDetail'
 
 const DetailAlbum = ({dataAlbum}) => {
-  console.log(dataAlbum)
-  return (
-    <>
-   <HeaderDetail dataAlbum={dataAlbum}/>
-   <ToolBarDetail dataAlbum={dataAlbum}/>
-   <ListAlbumSong dataAlbum={dataAlbum}/>
-   
 
-   </>
+    return (
+    <>
+        <HeaderDetail dataAlbum={dataAlbum} />
+        <ToolsBarDetail dataAlbum={dataAlbum} />
+        <ListAlbumSong dataAlbum={dataAlbum} />
+    </>
   )
 }
 

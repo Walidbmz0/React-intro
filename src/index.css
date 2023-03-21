@@ -4,33 +4,37 @@
 
 /* Active navigation menu */
 .active {
-    @apply text-green;
+  @apply text-green;
 }
 
 .active svg {
-    @apply text-green;
+  @apply text-green;
 }
 
-/* Image card */
-
+/* image card */
 .card-sh {
-   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-   height: 220px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  height: 220px;
 }
+
+
 /* TOPBAR */
 ::-webkit-scrollbar {
-    width: 10px; /* largeur de la scrollbar */
-    background-color: transparent; /* rend la scrollbar transparente */
-
+  width: 10px;
+  /* largeur de la scrollbar */
+  background-color: transparent;
+  /* rend la scrollbar transparente */
 }
 
-/* cible le thumb */
+/* cible le "thumb" */
 ::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    border-radius: 5px;
+  background-color: transparent;
+  /* couleur du "thumb" en vert */
+  border-radius: 5px;
+  /* arrondi des coins du "thumb" */
 }
 
-/* Collapse transition */ 
+/* collapse transition */
 .ReactCollapse--collapse {
-    transition: height 1500ms;
+  transition: height 500ms;
 }
